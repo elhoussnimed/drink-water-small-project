@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #1e88e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    color: white;
+}
+
+.totalDrink {
+    border: 5px solid blue;
+    background: white;
+    height: 300px;
+    width: 40%;
+    margin: 25px auto;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.totalDrink p {
+    font-size: 20px;
+    color: blue;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.totalDrink p.hide {
+    display: none;
+}
+
+.fill-ratio {
+    height: 0%;
+    background-color: #2196f3;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.totalDrink p span:first-of-type {
+    font-weight: bold;
+}
+
+.container>p {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.glasses {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 350px;
+    margin: 10px auto;
+}
+
+.glass {
+    display: block;
+    background: white;
+    color: blue;
+    width: calc((100% - 100px) / 4);
+    border: 4px solid blue;
+    padding: 5px;
+    height: 80px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+.glass.clicked {
+    background: #4fc3f7;
+}
